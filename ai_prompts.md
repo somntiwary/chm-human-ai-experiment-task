@@ -4,7 +4,7 @@
 - Total task effort — Four hours across those dates, as reported by the author. Per-session durations were not supplied.
 - Activities — Understanding the task requirements and interview process, planning phases, implementation, and debugging
 
-This selected log contains 27 ChatGPT entries followed by 17 Codex entries. The order supplied for each conversation is preserved. Dates use the reported working period because individual prompt dates were not recorded. ChatGPT prompts were edited for grammar and clarity. Codex wording is retained with formatting and export escapes cleaned up.
+This selected log contains 27 ChatGPT entries followed by 17 Codex entries. The order supplied for each conversation is preserved.
 
 ## ChatGPT prompts
 
