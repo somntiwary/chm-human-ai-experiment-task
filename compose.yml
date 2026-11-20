@@ -1,0 +1,142 @@
+name: chm-review-verify
+
+x-reviewer-model: &reviewer-model qwen3:1.7b
+x-ollama-image: &ollama-image ollama/ollama:0.20.5
+# Multi-platform indexes for Node 22-slim and Python 3.12-slim.
+x-node-base: &node-base public.ecr.aws/docker/library/node@sha256:e9f565d32859f0cbfb52125eafe8be39390f24dac302dc3cdf566e8ba3ab21ee
+x-python-base: &python-base public.ecr.aws/docker/library/python@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+
+services:
+  # Compose pulls missing service images before building. No containers use these two images.
+  node-base:
+    image: *node-base
+    scale: 0
+    pull_policy: missing
+  python-base:
+    image: *python-base
+    scale: 0
+    pull_policy: missing
+
+  db:
+    image: public.ecr.aws/docker/library/postgres:17
+    environment:
+      POSTGRES_DB: chm
+      POSTGRES_USER: chm
+      POSTGRES_PASSWORD: chm-local
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-h", "127.0.0.1", "-U", "chm", "-d", "chm"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  ollama:
+    image: *ollama-image
+    environment:
+      OLLAMA_CONTEXT_LENGTH: "2048"
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+
+  ollama-init:
+    image: *ollama-image
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      OLLAMA_MODEL: *reviewer-model
+    depends_on:
+      ollama:
+        condition: service_healthy
+    entrypoint: ["/bin/sh", "-ec"]
+    command:
+      - |
+        if ollama show "$$OLLAMA_MODEL" >/dev/null 2>&1; then
+          echo "Using cached $$OLLAMA_MODEL"
+        else
+          echo "Downloading $$OLLAMA_MODEL"
+          max_attempts=5
+          attempt=1
+          delay=5
+          while :; do
+            echo "Pull attempt $$attempt/$$max_attempts (up to 30 minutes per attempt)"
+            if timeout --kill-after=10s 30m ollama pull "$$OLLAMA_MODEL"; then
+              break
+            else
+              status=$$?
+            fi
+            if [ "$$status" -eq 124 ] || [ "$$status" -eq 137 ]; then
+              echo "Pull attempt $$attempt timed out." >&2
+            fi
+            if [ "$$attempt" -ge "$$max_attempts" ]; then
+              echo "Could not download $$OLLAMA_MODEL after $$max_attempts attempts. Check docker compose logs ollama-init ollama and Docker's HTTPS access to registry.ollama.ai and its download hosts. Then rerun docker compose up --build to resume." >&2
+              exit 1
+            fi
+            echo "Pull attempt $$attempt failed (exit $$status). Retrying in $$delay seconds; partial downloads stay cached." >&2
+            sleep "$$delay"
+            attempt=$$((attempt + 1))
+            delay=$$((delay * 2))
+          done
+        fi
+        echo "Checking that $$OLLAMA_MODEL can generate a response"
+        if ! response=$$(timeout --kill-after=10s 3m ollama run "$$OLLAMA_MODEL" --think=false --keepalive 10m --nowordwrap "Reply with only the word READY."); then
+          echo "$$OLLAMA_MODEL could not generate during startup. Check docker compose logs ollama-init ollama, then rerun docker compose up --build." >&2
+          exit 1
+        fi
+        if [ -z "$$(printf '%s' "$$response" | tr -d '[:space:]')" ]; then
+          echo "$$OLLAMA_MODEL returned no text during startup. Check docker compose logs ollama-init ollama, then rerun docker compose up --build." >&2
+          exit 1
+        fi
+        echo "Ready: $$OLLAMA_MODEL"
+
+  backend:
+    build:
+      context: ./backend
+      args:
+        PYTHON_BASE: *python-base
+    environment:
+      DATABASE_URL: postgresql://chm:chm-local@db:5432/chm
+      EXPERIMENT_CONFIG: /config.yml
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: *reviewer-model
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+      OPENAI_MODEL: "${OPENAI_MODEL:-}"
+    volumes:
+      - type: bind
+        source: ./config.yml
+        target: /config.yml
+        read_only: true
+        bind:
+          create_host_path: false
+    depends_on:
+      db:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8000/api/health', timeout=4)"]
+      interval: 5s
+      timeout: 5s
+      retries: 6
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NODE_BASE: *node-base
+    environment:
+      BACKEND_URL: http://backend:8000
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: *reviewer-model
+    ports:
+      - "127.0.0.1:3000:4173"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  ollama_models:
