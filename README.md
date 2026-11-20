@@ -1,5 +1,10 @@
 # Decision Study
 
+<img width="940" height="448" alt="image" src="https://github.com/user-attachments/assets/26d0ff65-2bea-4784-8691-6f43c1489505" />
+
+<img width="940" height="450" alt="image" src="https://github.com/user-attachments/assets/0a2975a4-7ebe-418d-9d9e-d491fa7c377f" />
+
+
 A local CHM demo in which three anonymous participants discuss and vote in two rounds to choose a Decision Maker. The subsequent experiment is imaginary, so the application ends at the result. The stack is React, Python FastAPI, PostgreSQL, Docker Compose, and Ollama.
 
 ## Quick start
