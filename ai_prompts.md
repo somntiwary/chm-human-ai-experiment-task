@@ -1,6 +1,6 @@
 # AI usage log
 
-- Working dates — 15–19 November 2026, as reported by the author
+- Working dates — 15–19 November 2026
 - Total task effort — Four hours across those dates, as reported by the author. Per-session durations were not supplied.
 - Activities — Understanding the task requirements and interview process, planning phases, implementation, and debugging
 
@@ -15,7 +15,7 @@ This selected log contains 27 ChatGPT entries followed by 17 Codex entries. The 
 
 ### Entry 01 — Understanding the assessment
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Task requirements and interview process
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -33,7 +33,7 @@ Assessment brief and four recruiting-email screenshots were supplied. The source
 
 ### Entry 02 — Choosing a fair tie-break rule
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Experiment rules and phase planning
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -49,7 +49,7 @@ Would the following approach be fair? First, compare total votes across both rou
 
 ### Entry 03 — Selecting randomly among tied players
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Experiment rules and phase planning
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -63,7 +63,7 @@ What mathematical rule can FastAPI use to select a winner fairly at random from 
 
 ### Entry 04 — Defining natural AI player behavior
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — AI agent design and phase planning
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -77,7 +77,7 @@ I want the agent to converse naturally, follow the discussion, consider what the
 
 ### Entry 05 — Planning development in phases
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase planning
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -105,7 +105,7 @@ Make the prompts clear, accurate, and consistent with all these requirements.
 
 ### Entry 06 — Investigating an unreachable or blank frontend
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 1 — Implementation and debugging
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -123,7 +123,7 @@ Three screenshots image(20261115-120205).png, image(20261115-120216).png, and im
 
 ### Entry 07 — Confirming the Phase 2 participant count
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 2 — Implementation
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -137,7 +137,7 @@ How many human participants can join a session in Phase 2?
 
 ### Entry 08 — Investigating a session that remains full
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 2 — Session debugging
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -155,7 +155,7 @@ Screenshots image(20261115-143019).png and image(20261115-143030).png showed a b
 
 ### Entry 09 — Checking the reconnection behavior
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 2 — Debugging verification
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -173,7 +173,7 @@ Screenshot image(20261115-163238).png showed “The session is waiting for playe
 
 ### Entry 10 — Moving to Phase 3
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 3 — Election implementation
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -187,7 +187,7 @@ Are we ready to move on to Phase 3 now?
 
 ### Entry 11 — Choosing a local model for the demo
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — Local LLM integration
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -201,7 +201,7 @@ Codex has added fields for an API model and API key. Since this project is a sim
 
 ### Entry 12 — Enabling follow-up replies
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — AI conversation debugging
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -221,7 +221,7 @@ Screenshots image(20261116-063548).png and image(20261116-063610).png showed a h
 
 ### Entry 13 — Giving the agents time awareness
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — AI conversation debugging
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -241,7 +241,7 @@ Screenshot image(20261116-084955).png showed Round 1 voting with the prior discu
 
 ### Entry 14 — Adding the break and explaining the winner
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Round transitions and result display
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -257,7 +257,7 @@ If you think it would improve clarity, also display the rule that determined the
 
 ### Entry 15 — Understanding one-command startup
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker startup and reviewer workflow
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -275,7 +275,7 @@ Screenshot image(20261117-051258).png showed instructions for the default Compos
 
 ### Entry 16 — Preparing complete startup with live AI
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker startup and reviewer workflow
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -291,7 +291,7 @@ Make docker compose up --build start the complete app with live AI from a fresh 
 
 ### Entry 17 — Clarifying the reviewer model choice
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker startup and model configuration
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -305,7 +305,7 @@ Does this prompt select Qwen instead of the llama3:latest model we discussed?
 
 ### Entry 18 — Understanding the reviewer startup sequence
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker startup and reviewer workflow
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -319,7 +319,7 @@ Once this is implemented, what will happen when a reviewer runs docker compose u
 
 ### Entry 19 — Confirming the two model configurations
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker startup and reviewer workflow
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -335,7 +335,7 @@ Set qwen3:1.7b as the default reviewer model. A fresh checkout should start the 
 
 ### Entry 20 — Understanding Docker image status
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker runtime debugging
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -353,7 +353,7 @@ Screenshot image(20261117-162635).png showed the Docker Desktop Images list.
 
 ### Entry 21 — Introducing an experiment-design concern
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Interview preparation and experiment design
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -367,7 +367,7 @@ I have a concern about the experiment.
 
 ### Entry 22 — Discussing vote disclosure and player names
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Interview preparation and experiment design
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -386,7 +386,7 @@ Please give me your perspective.
 
 ### Entry 23 — Clarifying the risk of influencing Round 2
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Interview preparation and experiment design
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -400,7 +400,7 @@ Your answer to the first question is still unclear to me. If I vote for Player B
 
 ### Entry 24 — Considering instructions or a protocol change
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Interview preparation and experiment design
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -414,7 +414,7 @@ Should I show this instruction before Round 2, "Keep your Round 1 vote private. 
 
 ### Entry 25 — Understanding private second-round voting
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Interview preparation and experiment design
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -428,7 +428,7 @@ If I am asked how I would collect Round 2 votes privately before opening any new
 
 ### Entry 26 — Testing the reviewer command
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Reviewer startup testing
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -442,7 +442,7 @@ Can I test the app as a reviewer by running docker compose up --build?
 
 ### Entry 27 — Diagnosing a first-attempt build failure
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Reviewer startup debugging
 - Tool or agent — ChatGPT
 - Exact model — GPT-6.1 Sol
@@ -496,11 +496,11 @@ View build details: docker-desktop://dashboard/build/default/default/ruybdrsp0k4
 - Exact model — GPT-6.1 Sol
 - Reasoning effort — Ultra
 
-The models named inside these prompts, including llama3:latest and qwen3:1.7b, are application runtime models. The coding-assistant model and reasoning setting above were supplied by the author.
+The models named inside these prompts, including llama3:latest and qwen3:1.7b, are application runtime models. The coding-assistant model and reasoning setting supplied above.
 
 ### Entry 01 — Building the initial scaffold
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 1 — Implementation
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -524,7 +524,7 @@ At the end of this phase and each later phase, report the files changed, the com
 
 ### Entry 02 — Implementing the two-round human experiment
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 2 — Implementation
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -550,7 +550,7 @@ Try the three-human flow with a temporarily shortened discussion timer. Restore 
 
 ### Entry 03 — Resetting a stuck session and verifying configuration
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 2 — Session debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -568,7 +568,7 @@ me the exact steps to start a fresh session at http://127.0.0.1:3000/.
 
 ### Entry 04 — Handling disconnections and reconnections
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 2 — Session debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -596,7 +596,7 @@ and the exact steps I can use to verify the fix.
 
 ### Entry 05 — Implementing the final election and tie-breaks
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 3 — Election implementation
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -621,7 +621,7 @@ Check an outright win, a Round 2 tie-break, a tie resolved by votes from others,
 
 ### Entry 06 — Implementing reusable LLM players
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — AI agent implementation
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -645,7 +645,7 @@ Verify the 2-human + 1-AI and 1-human + 2-AI configurations, including each AI p
 
 ### Entry 07 — Connecting to the installed Windows Llama 3 model
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — Local LLM integration
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -663,7 +663,7 @@ Test `[human, ai, ai]` through both rounds. Confirm each AI generates a reply ba
 
 ### Entry 08 — Improving AI follow-ups and round separation
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — AI conversation debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -685,7 +685,7 @@ Fix the AI discussion in the existing app. In my `[human, ai, ai]` test, both bo
 
 ### Entry 09 — Adding discussion time awareness
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — AI conversation debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -711,7 +711,7 @@ Verify both rounds with actual Llama 3 output. Ask a direct question early, rais
 
 ### Entry 10 — Applying the behavior to one or two AI players
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Phase 4 — Configuration verification
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -725,7 +725,7 @@ Apply this behavior to every AI slot, whether the session has one AI or two. Tes
 
 ### Entry 11 — Repairing the round transition and repeated AI replies
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Round transitions and AI debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -747,7 +747,7 @@ For each model call, use the latest **current-round** chat and remaining time. G
 
 ### Entry 12 — Configuring Qwen for reviewers and Llama 3 for the demo
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker startup and model configuration
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -761,7 +761,7 @@ Set `qwen3:1.7b` as the default reviewer model. A fresh checkout should start th
 
 ### Entry 13 — Explaining the agent design
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Interview preparation
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -775,7 +775,7 @@ explain step by step how you have designed the agent, and what are its propertie
 
 ### Entry 14 — Investigating the first-attempt Python image build error
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Docker build debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -820,7 +820,7 @@ View build details: docker-desktop://dashboard/build/default/default/zgdxz602zoe
 
 ### Entry 15 — Verifying automatic model download on a fresh start
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Reviewer startup debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -844,7 +844,7 @@ Count the fresh-start test as passed once the terminal shows `Downloading qwen3:
 
 ### Entry 16 — Investigating the first-attempt Node image build error
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Reviewer startup debugging
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
@@ -908,7 +908,7 @@ View build details: docker-desktop://dashboard/build/default/default/kmqbzrlw5yp
 
 ### Entry 17 — Explaining the complete application and agent workflow
 
-- Date — 15–19 November 2026 (exact prompt date not recorded)
+- Date — 15–19 November 2026
 - Phase — Interview preparation
 - Tool or agent — Codex Desktop app
 - Exact model — GPT-6.1 Sol
